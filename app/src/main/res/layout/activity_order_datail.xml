@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="io.approots.reserve.Activities.History.Order_datailActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/logo_trans" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/repple_effect_trs_overal"
+            android:onClick="backsas"
+            android:padding="23dp"
+            android:src="@drawable/close_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/round_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <io.approots.reserve.CustomFont.SemiBoldTextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorGrys"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/choose_branch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/choose_branch"
+            android:inputType="datetime"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/date_time"
+            android:inputType="datetime"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:enabled="false"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:enabled="false"
+            android:hint="@string/mobileno"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/plate_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:enabled="false"
+            android:hint="@string/plateno"
+            android:inputType="textWebEditText"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/car_doc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_edit"
+            android:enabled="false"
+            android:hint="@string/car_doc"
+            android:inputType="textWebEditText"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/button_review"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/round_red"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="cancel"
+            android:foreground="@drawable/repple_effect_trs"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <io.approots.reserve.CustomFont.SemiBoldTextView
+                android:id="@+id/proceed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/cancel"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

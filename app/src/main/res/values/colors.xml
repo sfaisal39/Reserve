@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#307DFB</color>
+    <color name="colorPrimaryDark">#307DFB</color>
+    <color name="colorAccent">#307DFB</color>
+
+    <color name="colorDay">#FF39ACDD</color>
+    <color name="colorGrys">#6C747E</color>
+    <color name="colorRed">#F3284F</color>
+    <color name="colorGreed">#4CD963</color>
+
+    <color name="colorWhite_Trs">#C1FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorgrey">#c5d7d7d9</color>
+    <color name="color150">#EAEEF3</color>
+    <color name="colorGrey_text">#F2ACACAC</color>
+    <color name="colorGrey_broder">#E0E0E0</color>
+    <color name="ColorBlackage">#DF596063</color>
+    <color name="ColorBlue">#294A81</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <!--8F8B8A-->
+
+    <!--blackage-->
+    <!--596063-->
+
+</resources>

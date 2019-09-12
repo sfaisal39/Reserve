@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_of_top_layout">
+
+        <RelativeLayout
+            android:id="@+id/icon_history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/repple_effect_trs_overal"
+            android:onClick="history">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/home_icon1" />
+
+            <RelativeLayout
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blc"
+                android:gravity="center">
+
+                <io.approots.reserve.CustomFont.RegularTextView
+                    android:id="@+id/textmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:onClick="logout"
+            android:padding="6dp"
+            android:src="@drawable/logo_trans" />
+
+        <RelativeLayout
+            android:id="@+id/iocn_chat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toStartOf="@+id/icon_notification"
+            android:layout_toLeftOf="@+id/icon_notification"
+            android:clickable="false"
+            android:focusable="false"
+            android:foreground="@drawable/repple_effect_trs_overal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/home_icon2"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blc"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <io.approots.reserve.CustomFont.RegularTextView
+                    android:id="@+id/textchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/icon_notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/repple_effect_trs_overal"
+            android:onClick="notification">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/home_icon3" />
+
+            <RelativeLayout
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_blc"
+                android:gravity="center">
+
+                <io.approots.reserve.CustomFont.RegularTextView
+                    android:id="@+id/textnotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_clicnicbnt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_white_circle"
+                android:clickable="true"
+                android:foreground="@drawable/repple_effect_trs"
+                android:gravity="center"
+                android:onClick="back"
+                android:paddingLeft="@dimen/padding_clicnic_bnt"
+                android:paddingRight="@dimen/padding_clicnic_bnt">
+
+                <io.approots.reserve.CustomFont.RegularTextView
+                    android:id="@+id/type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLength="200"
+                    android:minWidth="80dp"
+                    android:singleLine="true"
+                    android:text="Clinics  X"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_white_circle"
+                android:clickable="true"
+                android:foreground="@drawable/repple_effect_trs"
+                android:onClick="backs"
+
+
+                android:gravity="center"
+                android:layout_height="@dimen/height_clicnicbnt"
+                android:paddingLeft="@dimen/padding_clicnic_bnt"
+                android:paddingRight="@dimen/padding_clicnic_bnt">
+
+                <io.approots.reserve.CustomFont.RegularTextView
+                    android:id="@+id/type_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:maxLength="200"
+                    android:minWidth="80dp"
+                    android:singleLine="true"
+                    android:text="Skin care x"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@color/colorWhite">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/placeholder_homedetails"></include>
+
+                <include layout="@layout/placeholder_homedetails"></include>
+
+                <include layout="@layout/placeholder_homedetails"></include>
+
+                <include layout="@layout/placeholder_homedetails"></include>
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:clipToPadding="true"
+            android:paddingBottom="30dp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

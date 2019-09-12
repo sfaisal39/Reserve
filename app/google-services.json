@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657033085807",
+    "firebase_url": "https://reserveap-c416f.firebaseio.com",
+    "project_id": "reserveap-c416f",
+    "storage_bucket": "reserveap-c416f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657033085807:android:7a145bb6e539e012",
+        "android_client_info": {
+          "package_name": "io.approots.Reserveap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657033085807-2728obsffo74cs7oimqco8ri6sjfciqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATIzJ_FBa6xcTNU5TDnRr8hX5Z8WjLCWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657033085807-2728obsffo74cs7oimqco8ri6sjfciqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

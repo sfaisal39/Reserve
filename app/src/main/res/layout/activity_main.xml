@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:paddingBottom="35dp"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/signup"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="300dp"
+            android:layout_height="490dp"
+            android:layout_above="@+id/pageIndicatorView"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#00FFFDFD"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="220dp"
+                android:visibility="visible" />
+        </android.support.v7.widget.CardView>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="bottom"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="@color/colorWhite"
+            app:pageColor="#00FFFFFF"
+            app:snap="false" />
+    </RelativeLayout>
+    <!--<com.rd.PageIndicatorView-->
+    <!--android:id="@+id/pageIndicatorView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/pager"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--app:piv_animationType="scale"-->
+    <!--app:piv_dynamicCount="true"-->
+    <!--app:piv_interactiveAnimation="true"-->
+    <!--app:piv_selectedColor="@color/colorWhite"-->
+    <!--app:piv_unselectedColor="#63FFFFFF"-->
+    <!--app:piv_viewPager="@id/pager"-->
+    <!--attrs:piv_padding="42dp"-->
+    <!--attrs:piv_radius="5dp" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/signin"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/round_white"
+        android:onClick="signup">
+
+        <io.approots.reserve.CustomFont.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/guest"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/round_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/repple_effect_trs"
+        android:onClick="signin">
+
+        <io.approots.reserve.CustomFont.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/repple_effect_trs"
+        android:onClick="guest">
+
+        <io.approots.reserve.CustomFont.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/guest"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

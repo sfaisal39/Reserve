@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="35dp"
+    android:background="@color/colorWhite">
+
+    <io.approots.reserve.CustomFont.SemiBoldTextView
+        android:id="@+id/date_current"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/choose_time"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/day_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/date_current"
+        android:background="@color/colorWhite"
+        android:clipToPadding="true"
+        android:padding="2dp" />
+
+    <io.approots.reserve.CustomFont.SemiBoldTextView
+        android:id="@+id/text_des"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/day_Recycler"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/choose_time"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/slot_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_review"
+        android:layout_below="@+id/text_des"
+        android:layout_margin="3dp"
+        android:clipToPadding="true" />
+</RelativeLayout>

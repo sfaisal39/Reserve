@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_button">5dp</dimen>
+    <dimen name="textsize_button">17dp</dimen>
+    <dimen name="logo_width">150dp</dimen>
+    <dimen name="logo_height">90dp</dimen>
+    <dimen name="padding_clicnic_bnt">7dp</dimen>
+    <dimen name="textsize_clicnicbnt">14dp</dimen>
+    <dimen name="height_clicnicbnt">25dp</dimen>
+    <dimen name="size_of_top_layout">150dp</dimen>
+</resources>

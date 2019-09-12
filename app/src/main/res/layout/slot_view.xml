@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slot_rav"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/rounded_slot"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/repple_effect_trs">
+
+    <ImageView
+        android:id="@+id/time_img"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone" />
+
+    <io.approots.reserve.CustomFont.RegularTextView
+        android:id="@+id/timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="asasasasasasas"
+        android:textAlignment="center"
+        android:textColor="@color/ColorBlackage"
+        android:textSize="12dp" />
+
+    <io.approots.reserve.CustomFont.RegularTextView
+        android:id="@+id/SLOT_AVAIABLE_LABEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="asasasasasasas"
+        android:textAlignment="center"
+        android:textColor="@color/ColorBlackage"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:id="@+id/circle_status"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_green"></RelativeLayout>
+</RelativeLayout>

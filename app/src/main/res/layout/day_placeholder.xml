@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_margin="2.5dp"
+    android:background="@drawable/other"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/repple_effect">
+
+    <View
+        android:id="@+id/daya"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorgrey" />
+
+    <View
+        android:id="@+id/datea"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/daya"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/ColorBlackage" />
+
+</RelativeLayout>

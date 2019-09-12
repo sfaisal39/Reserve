@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.Reservation_Done">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/smile" />
+
+    <io.approots.reserve.CustomFont.SemiBoldTextView
+        android:id="@+id/textmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorGreed"
+        android:textSize="17dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/round_sky"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/repple_effect"
+        android:onClick="backhome">
+
+        <io.approots.reserve.CustomFont.SemiBoldTextView
+            android:id="@+id/proceed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="@string/backhome"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

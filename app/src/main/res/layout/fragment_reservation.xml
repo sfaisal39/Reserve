@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/slot_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:clipToPadding="true"
+        android:paddingBottom="30dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <io.approots.reserve.CustomFont.RegularTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_white"
+            android:gravity="center"
+            android:text="@string/accepted"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <io.approots.reserve.CustomFont.RegularTextView
+            android:id="@+id/status"
+            android:layout_width="140dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/round_sky"
+            android:gravity="center"
+            android:text="@string/history"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+        <io.approots.reserve.CustomFont.RegularTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:text="@string/reject"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>
